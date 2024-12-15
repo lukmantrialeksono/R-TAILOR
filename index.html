@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R TAILOR</title>
+    <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+    <header>
+        <h1 class="rtailor">R TAILOR</h1>
+        <nav>
+            <ul>
+                <button class="nav-button" onclick="location.href='#home'">Beranda</button>
+                <button class="nav-button" onclick="location.href='#services'">Layanan</button>
+                <button class="nav-button" onclick="location.href='#contact'">Kontak</button>
+            </ul>
+        </nav>
+       
+    </header>
+    <img src="1.jpg" alt="Header Image" width="100%">
+    
+    <section id="home">
+        <h2>Selamat Datang di jasa Penjahit</h2>
+        <p>Kami menawarkan layanan menjahit berbagai jenis pakaian dengan kualitas terbaik.</p>
+        <img src="2.jpg" width="30%">
+        <img src="3.jpg" width="45%">
+        <img src="4.jpg" width="30%">
+        <img src="5.jpg" width="40%">
+        <img src="6.jpg" width="40%">
+    </section>
+
+    <section id="services">
+        <h2>Layanan Kami</h2>
+        <ul>
+            <li>Menjahit Pakaian Pribadi</li>
+            <li>Perbaikan Pakaian</li>
+            <li>Jasa Menjahit Kostum</li>
+            <li>Menjahit Pakaian Anak</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <form id="contactForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+        <p id="responseMessage"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jasa Penjahit. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
