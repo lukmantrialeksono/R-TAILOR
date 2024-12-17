@@ -1,15 +1,23 @@
 document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Mencegah pengiriman form
+    event.preventDefault();
 
-    // Ambil nilai dari input
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+    // Ambil data input dari form
+    var nama = document.getElementById("nama").value;
+    var email = document.getElementById("email").value;
+    var pesan = document.getElementById("pesan").value;
 
-    // Tampilkan pesan sukses
-    const responseMessage = document.getElementById("responseMessage");
-    responseMessage.textContent = 'Terima kasih', '${name}! Pesan Anda telah kami terima';
-    
-    // Kosongkan form
-    this.reset();
+    // Format pesan WhatsApp (gunakan \n untuk baris baru)
+    var whatsappMessage = 'Hello, my name is ${nama}.\nEmail: ${email}.\nMessage: ${pesan}';
+
+    // Encode pesan agar URL valid
+    var encodedMessage = encodeURIComponent(whatsappMessage);
+
+    // Nomor WhatsApp tujuan dalam format internasional
+    var contactNumber = '6285729854116'; // Ganti dengan nomor tujuan
+
+    // Buat link WhatsApp
+    var whatsappLink = 'https://api.whatsapp.com/send?phone=6285729854116'
+
+    // Buka link WhatsApp di tab baru
+    window.open(whatsappLink, "_blank");
 });
