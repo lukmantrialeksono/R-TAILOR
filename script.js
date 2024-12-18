@@ -22,7 +22,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     var contactNumber = '6285642574428'; // Ganti dengan nomor tujuan
 
     // Buat link WhatsApp
-    var whatsappLink = "https://api.whatsapp.com/send?phone=${contactNumber}&text=${encodedMessage}";
+    var whatsappLink = "https://api.whatsapp.com/send?phone=6285642574428&text=Halo%20Admin%2C%0ASaya%20*"+ nama +"*%0AEmail%20saya%20*"+ email +"*%0A%0A%0A*"+ pesan +"*";
 
     // Buka link WhatsApp di tab baru
     window.open(whatsappLink, "_blank");
