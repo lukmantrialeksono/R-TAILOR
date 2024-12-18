@@ -19,7 +19,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     var encodedMessage = encodeURIComponent(whatsappMessage);
 
     // Nomor WhatsApp tujuan dalam format internasional
-    var contactNumber = '6285729854116'; // Ganti dengan nomor tujuan
+    var contactNumber = '6285642574428'; // Ganti dengan nomor tujuan
 
     // Buat link WhatsApp
     var whatsappLink = "https://api.whatsapp.com/send?phone=${contactNumber}&text=${encodedMessage}";
